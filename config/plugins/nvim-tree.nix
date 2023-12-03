@@ -1,0 +1,5 @@
+{
+  nvim-tree = {
+    enable = true;
+  };
+}

@@ -1,29 +1,18 @@
 { pkgs, ... }:
 
 {
-	config = {
-		colorschemes.tokyonight.enable = true;
+  config = {
+    colorschemes.tokyonight.enable = true;
 
-		options = {
-			number = true;
-			relativenumber = true;
-			tabstop = 2;
-			shiftwidth = 2;
-		};
+    globals.mapleader = " ";
 
-		plugins = {
-			nvim-tree.enable = true;
-		};
+    options = import ./options;
 
-		keymaps = [
-			{
-				action = "<CMD>NvimTreeToggle<CR>";
-				key = "<C-n>";
-				options = {
-					silent = true;
-					noremap = true;
-				};
-			}
-		];
-	};
+    keymaps = import ./keymaps;
+
+    plugins = {}
+    // import ./plugins/nvim-tree.nix
+    // import ./plugins/toggleterm.nix
+    ;
+  };
 }

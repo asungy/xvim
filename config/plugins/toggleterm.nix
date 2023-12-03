@@ -1,0 +1,5 @@
+{
+  toggleterm = {
+    enable = true;
+  };
+}
