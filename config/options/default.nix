@@ -51,7 +51,6 @@ in
   pumheight = 10;             # max number of items to show in popup-menu
   relativenumber = true;      # show line number relative to cursor line
   scrolloff = 10;             # min number of lines to keep above and below cursor
-  shell = builtins.getEnv "SHELL"; # name of shell to use for :! commands
   shiftwidth = 2;             # number of spaces to use for each step of (auto)indent
   showbreak = "+++ ";         # string to put at start of lines that have been wrapped
   showtabline = 0;            # when to show tabline (0: never)
