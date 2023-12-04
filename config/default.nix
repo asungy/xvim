@@ -11,8 +11,11 @@
     keymaps = import ./keymaps;
 
     plugins = {}
+    // import ./plugins/alpha.nix
+    // import ./plugins/lualine.nix
     // import ./plugins/nvim-tree.nix
     // import ./plugins/toggleterm.nix
+    // import ./plugins/telescope.nix
     ;
   };
 }
