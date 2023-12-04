@@ -17,5 +17,13 @@
     // import ./plugins/toggleterm.nix
     // import ./plugins/telescope.nix
     ;
+
+    extraPlugins = with pkgs.vimPlugins; [
+      hop-nvim
+    ];
+
+    extraConfigLua = ''
+      require('hop').setup{}
+    '';
   };
 }

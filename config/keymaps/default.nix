@@ -150,4 +150,16 @@ in
     mode = "n";
     options = options "Open terminal";
   }
+  {
+    action = "<CMD>HopChar1MW<CR>";
+    key = "s";
+    mode = "";
+    options = options "Hop to 1 char";
+  }
+  {
+    action = "<CMD>HopChar2MW<CR>";
+    key = "S";
+    mode = "";
+    options = options "Hop to 2 char";
+  }
 ]
