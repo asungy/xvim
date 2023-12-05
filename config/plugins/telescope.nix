@@ -30,6 +30,47 @@
         action = "grep_string";
         desc = "Search string under cursor or selection";
       };
+
+      "<leader>fb" = {
+        action = "buffers";
+        desc = "Lists open buffers";
+      };
+
+      "<leader>fr" = {
+        action = "registers";
+        desc = "Lists registers";
+      };
+
+      "<leader>bl" = {
+        action = "current_buffer_fuzzy_find";
+        desc = "Fuzzy find text in current buffer";
+      };
+
+      "<leader>ld" = {
+        action = "lsp_definitions";
+        desc = "Go to definitions";
+      };
+
+      "<leader>lr" = {
+        action = "lsp_references";
+        desc = "Go to references";
+      };
+
+      "<leader>ls" = {
+        action = "lsp_document_symbols";
+        desc = "Go to symbols";
+      };
+
+      "<leader>lt" = {
+        action = "lsp_type_definitions";
+        desc = "Go to type definitions";
+      };
+
+      "<leader>li" = {
+        action = "lsp_implementations";
+        desc = "Go to implementations";
+      };
+
     };
   };
 }

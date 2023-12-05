@@ -1,3 +1,5 @@
 # To-Do
 - [ ] Finish configuring telescope
-- [ ] Add hop as extra plugin
+  - Block on waiting for project to test on.
+- [x] Add hop as extra plugin
+- [ ] Figure out if corners can be rounded for ToggleTerm

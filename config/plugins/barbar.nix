@@ -1,0 +1,5 @@
+{
+  barbar = {
+    enable = true;
+  };
+}
