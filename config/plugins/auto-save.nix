@@ -1,0 +1,5 @@
+{
+  auto-save = {
+    enable = true;
+  };
+}

@@ -17,6 +17,7 @@
     // import ./plugins/nvim-tree.nix
     // import ./plugins/telescope.nix
     // import ./plugins/toggleterm.nix
+    // import ./plugins/auto-save.nix
     ;
 
     extraPlugins = with pkgs.vimPlugins; [
