@@ -5,3 +5,5 @@
 - [x] Figure out if corners can be rounded for ToggleTerm
 - [x] Does auto save work?
   - Yup
+- [x] Add gitsigns
+- [ ] Set up harpoon

@@ -12,12 +12,15 @@
 
     plugins = {}
     // import ./plugins/alpha.nix
+    // import ./plugins/auto-save.nix
     // import ./plugins/barbar.nix
+    // import ./plugins/comment-nvim.nix
+    // import ./plugins/gitsigns.nix
+    // import ./plugins/harpoon.nix
     // import ./plugins/lualine.nix
     // import ./plugins/nvim-tree.nix
     // import ./plugins/telescope.nix
     // import ./plugins/toggleterm.nix
-    // import ./plugins/auto-save.nix
     ;
 
     extraPlugins = with pkgs.vimPlugins; [
