@@ -10,6 +10,8 @@
       overrideGenericSorter = true;
     };
 
+    keymapsSilent = true;
+
     keymaps = {
       "<leader>gr" = {
         action = "live_grep";

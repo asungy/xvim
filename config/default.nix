@@ -17,6 +17,8 @@
     // import ./plugins/comment-nvim.nix
     // import ./plugins/gitsigns.nix
     // import ./plugins/harpoon.nix
+    // import ./plugins/indent-blankline.nix
+    // import ./plugins/lsp.nix
     // import ./plugins/lualine.nix
     // import ./plugins/nvim-tree.nix
     // import ./plugins/telescope.nix
