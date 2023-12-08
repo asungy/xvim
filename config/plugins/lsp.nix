@@ -16,9 +16,14 @@
     };
 
     servers = {
+      rust-analyzer = {
+        enable = true;
+        installCargo = false;
+        installRustc = false;
+      };
+
       clangd.enable = true;
       cmake.enable = true;
-      rust-analyzer.enable = true;
       tsserver.enable = true;
     };
   };

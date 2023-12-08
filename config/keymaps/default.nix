@@ -162,4 +162,16 @@ in
     mode = "";
     options = options "Hop to 2 char";
   }
+  {
+    action = "<CMD>lua require 'telescope.builtin'.diagnostics{bufnr=0}<CR>";
+    key = "<leader>ls";
+    mode = "n";
+    options = options "List diagnostics";
+  }
+  {
+    action = "<CMD>lua vim.lsp.buf.code_action()<CR>";
+    key = "<leader>la";
+    mode = "n";
+    options = options "Code action";
+  }
 ]
