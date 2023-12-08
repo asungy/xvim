@@ -5,7 +5,7 @@
     keymaps = {
       silent = true;
 
-      diagnostics = {
+      diagnostic = {
         "<leader>ll" = "goto_next";
         "<leader>lh" = "goto_prev";
       };
@@ -18,7 +18,6 @@
     servers = {
       clangd.enable = true;
       cmake.enable = true;
-      dockerls.enable = true;
       rust-analyzer.enable = true;
       tsserver.enable = true;
     };

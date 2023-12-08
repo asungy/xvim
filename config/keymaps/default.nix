@@ -162,18 +162,4 @@ in
     mode = "";
     options = options "Hop to 2 char";
   }
-  {
-    action = "require 'telescope.builtin'.diagnostics{bufnr=0}";
-    key = "<leader>ls";
-    lua = true;
-    mode = "n";
-    options = options "List diagnostics";
-  }
-  {
-    action = "vim.lsp.buf.code_action()";
-    key = "<leader>la";
-    lua = true;
-    mode = "n";
-    options = options "Code action";
-  }
 ]
