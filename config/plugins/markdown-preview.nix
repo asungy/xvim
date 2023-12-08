@@ -1,0 +1,5 @@
+{
+  markdown-preview = {
+    enable = true;
+  };
+}

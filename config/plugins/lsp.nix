@@ -24,6 +24,7 @@
 
       clangd.enable = true;
       cmake.enable = true;
+      nixd.enable = true;
       tsserver.enable = true;
     };
   };

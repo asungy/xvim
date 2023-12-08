@@ -19,10 +19,12 @@
     // import ./plugins/harpoon.nix
     // import ./plugins/indent-blankline.nix
     // import ./plugins/lsp.nix
+    // import ./plugins/lspsaga.nix
     // import ./plugins/lualine.nix
     // import ./plugins/nvim-tree.nix
     // import ./plugins/telescope.nix
     // import ./plugins/toggleterm.nix
+    // import ./plugins/markdown-preview.nix
     ;
 
     extraPlugins = with pkgs.vimPlugins; [

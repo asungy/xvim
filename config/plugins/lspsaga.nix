@@ -1,0 +1,5 @@
+{
+  lspsaga = {
+    enable = true;
+  };
+}
