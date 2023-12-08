@@ -3,8 +3,6 @@
     enable = true;
 
     keymaps = {
-      silent = true;
-
       diagnostic = {
         "<leader>ll" = "goto_next";
         "<leader>lh" = "goto_prev";
