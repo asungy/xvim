@@ -11,27 +11,45 @@
     keymaps = import ./keymaps;
 
     plugins = {}
-    // import ./plugins/alpha.nix
-    // import ./plugins/auto-save.nix
-    // import ./plugins/barbar.nix
-    // import ./plugins/comment-nvim.nix
-    // import ./plugins/gitsigns.nix
-    // import ./plugins/harpoon.nix
-    // import ./plugins/indent-blankline.nix
-    // import ./plugins/lsp.nix
-    // import ./plugins/lualine.nix
-    // import ./plugins/nvim-tree.nix
-    // import ./plugins/telescope.nix
-    // import ./plugins/toggleterm.nix
-    // import ./plugins/markdown-preview.nix
+    // import ./plugins/alpha.nix             # Greeter
+    // import ./plugins/auto-save.nix         # Auto save
+    // import ./plugins/autopairs.nix         # Auto-closing pairs
+    // import ./plugins/barbar.nix            # Tabline
+    // import ./plugins/cmp.nix               # Completion
+    // import ./plugins/comment-nvim.nix      # Convenint commenting
+    // import ./plugins/gitsigns.nix          # Git integration for buffers
+    // import ./plugins/harpoon.nix           # Quick file list
+    // import ./plugins/indent-blankline.nix  # Indentation guides
+    // import ./plugins/lsp.nix               # Language server
+    // import ./plugins/lualine.nix           # Status line
+    // import ./plugins/markdown-preview.nix  # Markdown previewer
+    // import ./plugins/noice.nix             # Notifications
+    // import ./plugins/nvim-tree.nix         # File explorer
+    // import ./plugins/specs.nix             # Cursor dance
+    // import ./plugins/surround.nix          # Modify delimiter pairs
+    // import ./plugins/telescope.nix         # Fuzzy find all the things
+    // import ./plugins/toggleterm.nix        # Floating terminal
+    // import ./plugins/treesitter.nix        # Parsing system
+    // import ./plugins/trouble.nix           # Pretty diagnostics
     ;
 
     extraPlugins = with pkgs.vimPlugins; [
+      flatten-nvim
       hop-nvim
+      nvim-hlslens
     ];
 
     extraConfigLua = ''
+      require('hlslens').setup{
+        calm_down = {
+          description = [[If calm_down is true, clear all lens and highlighting When the cursor is
+            out of the position range of the matched instance or any texts are changed]],
+          default = true,
+        }
+      }
+
       require('hop').setup{}
+      require('flatten').setup{}
     '';
   };
 }

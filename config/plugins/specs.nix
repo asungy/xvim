@@ -1,0 +1,5 @@
+{
+  specs = {
+    enable = true;
+  };
+}

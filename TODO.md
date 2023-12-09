@@ -3,3 +3,13 @@
 - [ ] Explore magma-nvim
 - [ ] Explore navbuddy
 - [ ] Explore neogen
+- [ ] Explore todo-comments
+- [ ] Explore which-key
+- [x] Check flatten
+- [x] Check hlslens
+- [ ] Check cmp plugins
+- [ ] Check nvim-scrollbar
+- [ ] Check vim-maximizer
+- [ ] Check vim-smoothie
+- [ ] Check zen-mode
+- [ ] Auto commands

@@ -1,0 +1,5 @@
+{
+  treesitter = {
+    enable = true;
+  };
+}
