@@ -6,6 +6,8 @@
 
     globals.mapleader = " ";
 
+    autoCmd = import ./autocmd;
+
     options = import ./options;
 
     keymaps = import ./keymaps;
@@ -37,6 +39,9 @@
       flatten-nvim
       hop-nvim
       nvim-hlslens
+      nvim-scrollbar
+      vim-smoothie
+      zen-mode-nvim
     ];
 
     extraConfigLua = ''
@@ -48,8 +53,10 @@
         }
       }
 
-      require('hop').setup{}
       require('flatten').setup{}
+      require('hop').setup{}
+      require('scrollbar').setup{}
+      require('scrollbar.handlers.search').setup{}
     '';
   };
 }

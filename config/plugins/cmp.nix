@@ -11,14 +11,19 @@
       "<Tab>" = {
         action = ''
           function(fallback)
+            local luasnip = require("luasnip")
+
+            local has_words_before = function()
+              local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+              return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+            end
+
             if cmp.visible() then
               cmp.select_next_item()
-            elseif luasnip.expandable() then
-              luasnip.expand()
             elseif luasnip.expand_or_jumpable() then
               luasnip.expand_or_jump()
-            elseif check_backspace() then
-              fallback()
+            elseif has_words_before() then
+              cmp.complete()
             else
               fallback()
             end
@@ -86,4 +91,6 @@
   cmp-fuzzy-buffer.enable = true;
   cmp-fuzzy-path.enable = true;
   cmp-nvim-lsp.enable = true;
+
+  luasnip.enable = true;
 }

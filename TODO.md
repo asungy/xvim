@@ -7,9 +7,8 @@
 - [ ] Explore which-key
 - [x] Check flatten
 - [x] Check hlslens
-- [ ] Check cmp plugins
-- [ ] Check nvim-scrollbar
-- [ ] Check vim-maximizer
-- [ ] Check vim-smoothie
-- [ ] Check zen-mode
-- [ ] Auto commands
+- [x] Check cmp plugins
+- [x] Check nvim-scrollbar
+- [x] Check vim-smoothie
+- [x] Check zen-mode
+- [x] Auto commands

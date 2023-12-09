@@ -210,4 +210,16 @@ in
     mode = "n";
     options = options "Search from top (reverse)";
   }
+  {
+    action = "<CMD>ZenMode<CR>";
+    key = "<leader>zn";
+    mode = "n";
+    options = options "Zen mode";
+  }
+  {
+    action = "<CMD>WindowsMaximize<CR>";
+    key = "<C-w>z";
+    mode = "n";
+    options = options "Maximize window";
+  }
 ]

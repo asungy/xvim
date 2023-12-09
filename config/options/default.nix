@@ -51,7 +51,7 @@ in
   pumheight = 10;             # max number of items to show in popup-menu
   relativenumber = true;      # show line number relative to cursor line
   scrolloff = 10;             # min number of lines to keep above and below cursor
-  shiftwidth = 2;             # number of spaces to use for each step of (auto)indent
+  shiftwidth = 4;             # number of spaces to use for each step of (auto)indent
   showbreak = "+++ ";         # string to put at start of lines that have been wrapped
   showtabline = 0;            # when to show tabline (0: never)
   smarttab = true;            # enable smart tab
@@ -60,7 +60,7 @@ in
   splitright = true;          # splitting window will put new window to right of current one
   statusline = status_fmt;    # set status line format
   swapfile = false;           # use swapfile for buffer
-  tabstop = 2;                # number of spaces that <Tab> counts for
+  tabstop = 4;                # number of spaces that <Tab> counts for
   termguicolors = true;       # enable 24-bit RGB color
   wildmenu = true;            # enable "enhanced mode" of command-line completion
   winbar = "";                # set winbar format
