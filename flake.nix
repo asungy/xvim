@@ -18,10 +18,12 @@
       in
       {
         apps = {
+          name = "nixim";
           type = "app";
           program = nvim;
         };
         packages = {
+          name = "nixim";
           inherit nvim;
           default = nvim;
         };
