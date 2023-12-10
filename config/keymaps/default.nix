@@ -222,4 +222,10 @@ in
     mode = "n";
     options = options "Maximize window";
   }
+  {
+    action = "<C-\\><C-n>";
+    key = "<Esc>";
+    mode = "t";
+    options = options "Escape from terminal";
+  }
 ]
