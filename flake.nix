@@ -1,5 +1,5 @@
 {
-  description = "asungy's Neovim configurations";
+  description = "A very basic flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -17,10 +17,6 @@
         };
       in
       {
-        apps = {
-          type = "app";
-          program = nvim;
-        };
         packages = {
           inherit nvim;
           default = nvim;
