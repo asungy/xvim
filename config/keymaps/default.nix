@@ -169,12 +169,6 @@ in
     options = options "List diagnostics";
   }
   {
-    action = "<CMD>lua vim.lsp.buf.code_action()<CR>";
-    key = "<leader>la";
-    mode = "n";
-    options = options "Code action";
-  }
-  {
     action = "<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>";
     key = "n";
     mode = "n";

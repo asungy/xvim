@@ -6,10 +6,12 @@
       diagnostic = {
         "<leader>ll" = "goto_next";
         "<leader>lh" = "goto_prev";
+        "<leader>lk" = "open_float";
       };
 
       lspBuf = {
-        "<C-k>" = "hover";
+        "<leader>la" = "code_action";
+        "<leader>lc" = "rename";
       };
     };
 
