@@ -9,7 +9,7 @@
       };
 
       lspBuf = {
-        "K" = "hover";
+        "<C-k>" = "hover";
       };
     };
 
