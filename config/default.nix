@@ -25,6 +25,7 @@
     // import ./plugins/lsp.nix               # Language server
     // import ./plugins/lualine.nix           # Status line
     // import ./plugins/markdown-preview.nix  # Markdown previewer
+    // import ./plugins/neogit.nix            # Git interface
     // import ./plugins/noice.nix             # Notifications
     // import ./plugins/nvim-tree.nix         # File explorer
     // import ./plugins/specs.nix             # Cursor dance
@@ -36,7 +37,6 @@
     ;
 
     extraPlugins = with pkgs.vimPlugins; [
-      flatten-nvim
       hop-nvim
       nvim-hlslens
       nvim-scrollbar
@@ -53,7 +53,6 @@
         }
       }
 
-      require('flatten').setup{}
       require('hop').setup{}
       require('scrollbar').setup{}
       require('scrollbar.handlers.search').setup{}
