@@ -241,13 +241,13 @@ in
     options = options "Go to type definition";
   }
   {
-    action = "<CMD>Lspsaga diagnostics_jump_next<CR>";
+    action = "<CMD>Lspsaga diagnostic_jump_next<CR>";
     key = "<leader>ll";
     mode = "n";
     options = options "Next diagnostic";
   }
   {
-    action = "<CMD>Lspsaga diagnostics_jump_prev<CR>";
+    action = "<CMD>Lspsaga diagnostic_jump_prev<CR>";
     key = "<leader>lh";
     mode = "n";
     options = options "Previous diagnostic";
