@@ -4,14 +4,14 @@
 
     keymaps = {
       diagnostic = {
-        "<leader>ll" = "goto_next";
-        "<leader>lh" = "goto_prev";
-        "<leader>lk" = "open_float";
+        # "<leader>ll" = "goto_next";
+        # "<leader>lh" = "goto_prev";
+        # "<leader>lk" = "open_float";
       };
 
       lspBuf = {
-        "<leader>la" = "code_action";
-        "<leader>lc" = "rename";
+        # "<leader>la" = "code_action";
+        # "<leader>lc" = "rename";
       };
     };
 
