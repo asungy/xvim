@@ -1,10 +1,10 @@
 # To-Do
-- [ ] Explore lspsaga
+- [x] Explore lspsaga
 - [ ] Explore magma-nvim
 - [ ] Explore navbuddy
 - [ ] Explore neogen
 - [ ] Explore todo-comments
-- [ ] Explore which-key
+- [x] Explore which-key
 - [x] Check flatten
 - [x] Check hlslens
 - [x] Check cmp plugins

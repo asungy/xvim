@@ -35,6 +35,7 @@
     // import ./plugins/toggleterm.nix        # Floating terminal
     // import ./plugins/treesitter.nix        # Parsing system
     // import ./plugins/trouble.nix           # Pretty diagnostics
+    // import ./plugins/which-key.nix         # Key suggestions
     ;
 
     extraPlugins = with pkgs.vimPlugins; [
