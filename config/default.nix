@@ -47,17 +47,12 @@
     ];
 
     extraConfigLua = ''
-      require('hlslens').setup{
-        calm_down = {
-          description = [[If calm_down is true, clear all lens and highlighting When the cursor is
-            out of the position range of the matched instance or any texts are changed]],
-          default = true,
-        }
-      }
-
       require('hop').setup{}
       require('scrollbar').setup{}
       require('scrollbar.handlers.search').setup{}
-    '';
+    ''
+    + import ./lua_config/cmp.nix
+    + import ./lua_config/hlslens.nix
+    ;
   };
 }
