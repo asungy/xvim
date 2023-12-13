@@ -2,19 +2,6 @@
   lsp = {
     enable = true;
 
-    keymaps = {
-      diagnostic = {
-        # "<leader>ll" = "goto_next";
-        # "<leader>lh" = "goto_prev";
-        # "<leader>lk" = "open_float";
-      };
-
-      lspBuf = {
-        # "<leader>la" = "code_action";
-        # "<leader>lc" = "rename";
-      };
-    };
-
     servers = {
       rust-analyzer = {
         enable = true;
@@ -25,6 +12,7 @@
       clangd.enable = true;
       cmake.enable = true;
       nixd.enable = true;
+      pylsp.enable = true;
       tsserver.enable = true;
     };
 
