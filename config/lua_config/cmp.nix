@@ -1,5 +1,7 @@
 # At the moment, Nixvim does not allow `cmdline` to be configured.
 ''
+do
+
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 
@@ -112,4 +114,6 @@ cmp.setup.cmdline(':', {
     { name = 'cmdline' },
   })
 })
+
+end
 ''

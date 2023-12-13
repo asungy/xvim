@@ -46,13 +46,16 @@
       zen-mode-nvim
     ];
 
-    extraConfigLua = ''
-      require('hop').setup{}
-      require('scrollbar').setup{}
-      require('scrollbar.handlers.search').setup{}
-    ''
+    extraConfigLua = ""
     + import ./lua_config/cmp.nix
     + import ./lua_config/hlslens.nix
+    + ''
+      require('hop').setup{}
+      require('scrollbar').setup{}
+
+      -- This needs to be after `hlslens` setup.
+      require('scrollbar.handlers.search').setup{}
+    ''
     ;
   };
 }

@@ -1,4 +1,6 @@
 ''
+do
+
 require('hlslens').setup{
   calm_down = {
     description = [[If calm_down is true, clear all lens and highlighting When the cursor is
@@ -6,4 +8,6 @@ require('hlslens').setup{
     default = true,
   }
 }
+
+end
 ''
