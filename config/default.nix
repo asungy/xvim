@@ -26,6 +26,7 @@
     // import ./plugins/lspsaga.nix           # LSP on steroids
     // import ./plugins/lualine.nix           # Status line
     // import ./plugins/markdown-preview.nix  # Markdown previewer
+    // import ./plugins/navbuddy.nix          # Navigation popup
     // import ./plugins/neogit.nix            # Git interface
     // import ./plugins/noice.nix             # Notifications
     // import ./plugins/nvim-tree.nix         # File explorer
