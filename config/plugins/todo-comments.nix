@@ -1,0 +1,5 @@
+{
+  todo-comments = {
+    enable = true;
+  };
+}

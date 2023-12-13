@@ -1,8 +1,7 @@
 # To-Do
 - [x] Explore lspsaga
 - [ ] Explore magma-nvim
-- [ ] Explore navbuddy
-- [ ] Explore neogen
+- [x] Explore navbuddy
 - [ ] Explore todo-comments
 - [x] Explore which-key
 - [x] Check flatten

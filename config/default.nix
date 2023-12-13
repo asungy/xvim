@@ -33,6 +33,7 @@
     // import ./plugins/specs.nix             # Cursor dance
     // import ./plugins/surround.nix          # Modify delimiter pairs
     // import ./plugins/telescope.nix         # Fuzzy find all the things
+    // import ./plugins/todo-comments.nix     # To-Do search
     // import ./plugins/toggleterm.nix        # Floating terminal
     // import ./plugins/treesitter.nix        # Parsing system
     // import ./plugins/trouble.nix           # Pretty diagnostics
