@@ -28,7 +28,8 @@
     // import ./plugins/markdown-preview.nix  # Markdown previewer
     // import ./plugins/navbuddy.nix          # Navigation popup
     // import ./plugins/neogit.nix            # Git interface
-    // import ./plugins/noice.nix             # Notifications
+    // import ./plugins/noice.nix             # UI popup menu
+    // import ./plugins/notify.nix            # Notifications
     // import ./plugins/nvim-tree.nix         # File explorer
     // import ./plugins/specs.nix             # Cursor dance
     // import ./plugins/surround.nix          # Modify delimiter pairs
