@@ -43,18 +43,15 @@
 
     extraPlugins = with pkgs.vimPlugins; [
       hop-nvim         # Quick navigation
-      molten-nvim      # Run Jupyter code
       nvim-hlslens     # Nice search highlighting
       nvim-scrollbar   # Scrollbar
       vim-smoothie     # Smooth scrolling
       zen-mode-nvim    # Zen mode
-      pkgs.python311Packages.jupyter-client
     ];
 
     extraConfigLua = ""
     + import ./lua_config/cmp.nix
     + import ./lua_config/hlslens.nix
-    + import ./lua_config/molten.nix
     + ''
       require('hop').setup{}
       require('scrollbar').setup{}
