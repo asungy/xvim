@@ -5,8 +5,9 @@ let
     desc = desc;
   };
 in
-import ./lspsaga.nix options ++
 import ./hlslens.nix options ++
+import ./lspsaga.nix options ++
+import ./molten.nix options ++
 [
   {
     action = "k<S-j>";
