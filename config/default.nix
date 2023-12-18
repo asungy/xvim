@@ -25,7 +25,6 @@
     // import ./plugins/lsp.nix               # Language server
     // import ./plugins/lspsaga.nix           # LSP on steroids
     // import ./plugins/lualine.nix           # Status line
-    // import ./plugins/molten.nix            # Run Jupyter code
     // import ./plugins/markdown-preview.nix  # Markdown previewer
     // import ./plugins/navbuddy.nix          # Navigation popup
     // import ./plugins/neogit.nix            # Git interface
@@ -43,16 +42,19 @@
     ;
 
     extraPlugins = with pkgs.vimPlugins; [
-      hop-nvim
-      nvim-hlslens
-      nvim-scrollbar
-      vim-smoothie
-      zen-mode-nvim
+      hop-nvim         # Quick navigation
+      molten-nvim      # Run Jupyter code
+      nvim-hlslens     # Nice search highlighting
+      nvim-scrollbar   # Scrollbar
+      vim-smoothie     # Smooth scrolling
+      zen-mode-nvim    # Zen mode
+      pkgs.python311Packages.jupyter-client
     ];
 
     extraConfigLua = ""
     + import ./lua_config/cmp.nix
     + import ./lua_config/hlslens.nix
+    + import ./lua_config/molten.nix
     + ''
       require('hop').setup{}
       require('scrollbar').setup{}
