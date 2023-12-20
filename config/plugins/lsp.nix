@@ -13,6 +13,7 @@
       cmake.enable = true;
       nixd.enable = true;
       pylsp.enable = true;
+      terraformls.enable = true;
       tsserver.enable = true;
     };
 
