@@ -1,5 +1,4 @@
-# At the moment, Nixvim does not allow `cmdline` to be configured.
-''
+-- At the moment, Nixvim does not allow `cmdline` to be configured.
 do
 
 local cmp = require("cmp")
@@ -116,4 +115,3 @@ cmp.setup.cmdline(':', {
 })
 
 end
-''

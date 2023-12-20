@@ -42,6 +42,7 @@
     ;
 
     extraPlugins = with pkgs.vimPlugins; [
+      ChatGPT-nvim     # Career existentialism
       hop-nvim         # Quick navigation
       nvim-hlslens     # Nice search highlighting
       nvim-scrollbar   # Scrollbar
@@ -50,8 +51,7 @@
     ];
 
     extraConfigLua = ""
-    + import ./lua_config/cmp.nix
-    + import ./lua_config/hlslens.nix
+    + import ./lua
     + ''
       require('hop').setup{}
       require('scrollbar').setup{}

@@ -5,6 +5,7 @@ let
     desc = desc;
   };
 in
+import ./chatgpt.nix options ++
 import ./hlslens.nix options ++
 import ./lspsaga.nix options ++
 [

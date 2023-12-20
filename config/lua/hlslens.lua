@@ -1,4 +1,3 @@
-''
 do
 
 require('hlslens').setup{
@@ -10,4 +9,3 @@ require('hlslens').setup{
 }
 
 end
-''
