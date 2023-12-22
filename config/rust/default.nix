@@ -8,7 +8,18 @@
     extraPlugins = default.extraPlugins;
     globals = default.globals;
     keymaps = default.keymaps;
-    plugins = default.plugins;
+
+    plugins = default.plugins
+    // {
+      lsp = {
+        enable = true;
+        servers.rust-analyzer = {
+          enable = true;
+          installCargo = false;
+          installRustc = false;
+        };
+      };
+    };
 
     extraPackages = default.extraPackages
       ++ [
