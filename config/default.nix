@@ -63,5 +63,8 @@
       require('scrollbar.handlers.search').setup{}
     ''
     ;
+
+    extraPackages = with pkgs; [
+    ];
   };
 }

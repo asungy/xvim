@@ -13,12 +13,12 @@
         pkgs = nixpkgs.legacyPackages.${system};
         config = import ./config { inherit pkgs; };
         nvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
+          inherit pkgs;
           module = config;
         };
       in
       {
         packages = {
-          inherit nvim;
           default = nvim;
         };
       }
