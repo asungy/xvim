@@ -21,10 +21,11 @@
         };
         default = config.default;
         rust = config.rust;
+        python = config.python;
       in
       {
         packages = {
-          inherit default rust;
+          inherit default rust python;
         };
       }
     );

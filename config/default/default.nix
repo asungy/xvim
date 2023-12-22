@@ -21,7 +21,6 @@
   // import ./plugins/gitsigns.nix          # Git integration for buffers
   // import ./plugins/harpoon.nix           # Quick file list
   // import ./plugins/indent-blankline.nix  # Indentation guides
-  // import ./plugins/lsp.nix               # Language server
   // import ./plugins/lspsaga.nix           # LSP on steroids
   // import ./plugins/lualine.nix           # Status line
   // import ./plugins/markdown-preview.nix  # Markdown previewer

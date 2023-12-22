@@ -15,7 +15,18 @@ in
         extraPlugins = default.extraPlugins;
         globals = default.globals;
         keymaps = default.keymaps;
-        plugins = default.plugins;
+
+        plugins = default.plugins
+        // {
+          lsp = {
+            enable = true;
+            servers = {
+              nixd.enable = true;
+              terraformls.enable = true;
+            };
+            preConfig = builtins.readFile ./_common/lsp_preconfig.lua;
+          };
+        };
       };
     };
   };
@@ -23,5 +34,10 @@ in
   rust = makeNixvimWithModule {
     inherit pkgs;
     module = import ./rust { inherit pkgs default; };
+  };
+
+  python = makeNixvimWithModule {
+    inherit pkgs;
+    module = import ./python { inherit pkgs default; };
   };
 }
