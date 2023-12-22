@@ -31,6 +31,7 @@
     // import ./plugins/noice.nix             # UI popup menu
     // import ./plugins/notify.nix            # Notifications
     // import ./plugins/nvim-tree.nix         # File explorer
+    // import ./plugins/packer.nix            # For unsupported packages
     // import ./plugins/specs.nix             # Cursor dance
     // import ./plugins/surround.nix          # Modify delimiter pairs
     // import ./plugins/telescope.nix         # Fuzzy find all the things
@@ -47,6 +48,7 @@
       nvim-hlslens     # Nice search highlighting
       nvim-scrollbar   # Scrollbar
       vim-smoothie     # Smooth scrolling
+      windows-nvim     # Maximize windows
       zen-mode-nvim    # Zen mode
     ];
 
@@ -55,6 +57,7 @@
     + ''
       require('hop').setup{}
       require('scrollbar').setup{}
+      require('windows').setup{}
 
       -- This needs to be after `hlslens` setup.
       require('scrollbar.handlers.search').setup{}
