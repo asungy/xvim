@@ -23,6 +23,7 @@
       "javascriptreact"
       "json"
       "jsonc"
+      "lua"
       "markdown"
       "nix"
       "terraform"

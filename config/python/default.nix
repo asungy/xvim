@@ -5,8 +5,6 @@
     colorschemes = default.colorschemes;
     options = default.options;
     globals = default.globals;
-    keymaps = default.keymaps;
-    extraConfigLua = default.extraConfigLua;
 
     plugins = default.plugins
     // {
@@ -18,12 +16,18 @@
 
     extraPlugins = with pkgs.vimPlugins;
       default.extraPlugins
-      ++ [];
+      ++ [
+        iron-nvim
+      ];
 
     extraPackages = with pkgs.python311Packages;
       default.extraPackages
       ++ [
         python
       ];
+
+    extraConfigLua = default.extraConfigLua + builtins.readFile ./iron.lua;
+
+    keymaps = default.keymaps ++ import ./keymaps.nix;
   };
 }
