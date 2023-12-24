@@ -7,27 +7,45 @@ let
 in
 [
   {
-      action = "<CMD>IronRepl<CR>";
-      key = "<leader>rs";
+      action = "<CMD>MagmaEvaluateLine<CR>";
+      key = "<leader>ml";
       mode = "n";
-      options = options "Open IronRepl";
+      options = options "Magma evaluate line";
   }
   {
-      action = "<CMD>IronRestart<CR>";
-      key = "<leader>rr";
-      mode = "n";
-      options = options "Restart IronRepl";
+      action = "<CMD>MagmaEvaluateVisual<CR>";
+      key = "<leader>mv";
+      mode = "x";
+      options = options "Magma evaluate visual";
   }
   {
-      action = "<CMD>IronFocus<CR>";
-      key = "<leader>rf";
+      action = "<CMD>MagmaReevaluteCell<CR>";
+      key = "<leader>mr";
       mode = "n";
-      options = options "Focus IronRepl";
+      options = options "Magma reevaluate cell";
   }
   {
-      action = "<CMD>IronHide<CR>";
-      key = "<leader>rh";
+      action = "<CMD>MagmaDelete<CR>";
+      key = "<leader>md";
       mode = "n";
-      options = options "Hide IronRepl";
+      options = options "Magma delete cell";
+  }
+  {
+      action = "<CMD>MagmaInterrupt<CR>";
+      key = "<leader>mi";
+      mode = "n";
+      options = options "Magma interrupt";
+  }
+  {
+      action = "<CMD>MagmaRestart!<CR>";
+      key = "<leader>mx";
+      mode = "n";
+      options = options "Magma restart";
+  }
+  {
+      action = "<CMD>noautocmd MagmaEnterOutput<CR>";
+      key = "<leader>mq";
+      mode = "n";
+      options = options "Magma enter output";
   }
 ]

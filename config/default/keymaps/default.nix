@@ -143,7 +143,7 @@ import ./lspsaga.nix options ++
   }
   {
     action = "<CMD>MaximizerToggle!<CR>";
-    key = "<leader>mt";
+    key = "<C-t>";
     mode = "n";
     options = options "Toggle window maximization";
   }
