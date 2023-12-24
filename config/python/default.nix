@@ -5,7 +5,6 @@
     colorschemes = default.colorschemes;
     options = default.options;
     globals = default.globals;
-    extraPlugins = default.extraPlugins;
 
     plugins = default.plugins
     // {
@@ -13,14 +12,13 @@
         enable = true;
         servers.pylsp.enable = true;
       };
-
-      magma-nvim = {
-        enable = true;
-        imageProvider = "kitty";
-        outputWindowBorders = true;
-        wrapOutput = true;
-      };
     };
+
+    extraPlugins = with pkgs.vimPlugins;
+      default.extraPlugins
+      ++ [
+        iron-nvim
+      ];
 
     extraPackages = with pkgs.python311Packages;
       default.extraPackages
@@ -28,17 +26,7 @@
         python
       ];
 
-    extraConfigLua = default.extraConfigLua + ''
-      function MagmaInitPython()
-        vim.cmd[[
-        :MagmaInit python3
-        ]]
-      end
-
-      vim.cmd[[
-      :command MagmaInitPython lua MagmaInitPython()
-      ]]
-    '';
+    extraConfigLua = default.extraConfigLua + builtins.readFile ./iron.lua;
 
     keymaps = default.keymaps ++ import ./keymaps.nix;
   };
