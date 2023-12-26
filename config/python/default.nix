@@ -11,6 +11,7 @@
       lsp = {
         enable = true;
         servers.pylsp.enable = true;
+        preConfig = builtins.readFile ../_common/lsp_preconfig.lua;
       };
     };
 

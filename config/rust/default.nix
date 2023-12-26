@@ -18,6 +18,7 @@
           installCargo = false;
           installRustc = false;
         };
+        preConfig = builtins.readFile ../_common/lsp_preconfig.lua;
       };
     };
 
