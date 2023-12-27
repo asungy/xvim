@@ -22,10 +22,15 @@
       };
     };
 
-    extraPackages = default.extraPackages
+    extraPackages =
+    let
+      rust-toolchain = pkgs.rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {
+        extensions = [ "rust-src" "rust-analyzer" ];
+      });
+    in
+    default.extraPackages
       ++ [
-        pkgs.rust-analyzer
-        pkgs.rust-bin.nightly.latest.default
+        rust-toolchain
         pkgs.gdb
       ];
   };
