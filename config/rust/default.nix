@@ -24,9 +24,9 @@
 
     extraPackages =
     let
-      rust-toolchain = pkgs.rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {
+      rust-toolchain = pkgs.rust-bin.stable.latest.default.override {
         extensions = [ "rust-src" "rust-analyzer" ];
-      });
+      };
     in
     default.extraPackages
       ++ [
