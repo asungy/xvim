@@ -3,7 +3,6 @@ do
 local home = vim.fn.expand("$HOME")
 
 local config = {
-  api_key_cmd = "gpg --decrypt " .. home .. "/.openai-key.gpg",
   yank_register = "+",
   edit_with_instructions = {
     diff = false,
