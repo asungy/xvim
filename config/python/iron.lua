@@ -5,7 +5,11 @@ require("iron.core").setup {
     scratch_repl = true,
     repl_definition = {
       python = {
-        command = {"python"}
+        command = {"python"},
+      },
+      -- For running Python code blocks in Markdown files.
+      markdown = {
+        command = {"python"},
       }
     },
     repl_open_cmd = require("iron.view").split.vertical.topleft(0.3),
