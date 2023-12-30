@@ -1,16 +1,4 @@
 let
-  status_fmt = ""
-  + "%n "
-  + "%m"
-  + "%r"
-  + "%y "
-  + "%F "
-  + "%= "
-  + "%L:%l"
-  + "/%L "
-  + "C:%v"
-  ;
-
   listchars = "precedes:<,extends:>,tab:>-,trail:_";
 in
 {
@@ -58,7 +46,6 @@ in
   smartindent = true;         # enable smart indent
   splitbelow = true;          # splitting window will put new window below the current one
   splitright = true;          # splitting window will put new window to right of current one
-  statusline = status_fmt;    # set status line format
   swapfile = false;           # use swapfile for buffer
   tabstop = 4;                # number of spaces that <Tab> counts for
   termguicolors = true;       # enable 24-bit RGB color
