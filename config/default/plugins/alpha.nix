@@ -55,7 +55,7 @@
           position = "center";
         };
         type = "text";
-        val = "\"Every process has a genesis and ends with a revelation\" - Shing02";
+        val = "\"Short cuts make long delays\" - J.R.R Tolkien";
       }
     ];
 
