@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, nixvim, rust-overlay, flake-compat, }:
+  outputs = { self, nixpkgs, flake-utils, nixvim, rust-overlay, }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         overlays = [ (import rust-overlay) ];
