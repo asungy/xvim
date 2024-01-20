@@ -29,4 +29,9 @@ in
     inherit pkgs;
     module = import ./python { inherit pkgs default; };
   };
+
+  ts = makeNixvimWithModule {
+    inherit pkgs;
+    module = import ./ts { inherit pkgs default; };
+  };
 }
