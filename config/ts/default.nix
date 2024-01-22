@@ -20,7 +20,7 @@
           };
           tsserver = {
             enable = true;
-            autostart = false;
+            autostart = true;
           };
         };
         preConfig = builtins.readFile ../_common/lsp_preconfig.lua;

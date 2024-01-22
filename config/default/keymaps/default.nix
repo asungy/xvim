@@ -6,6 +6,7 @@ let
   };
 in
 import ./chatgpt.nix options ++
+import ./gitsigns.nix options ++
 import ./hlslens.nix options ++
 import ./lspsaga.nix options ++
 [

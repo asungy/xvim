@@ -23,7 +23,7 @@
     };
 
     keymaps = {
-      "<leader>gr" = {
+      "<leader>rg" = {
         action = "live_grep";
         desc = "Search text";
       };
@@ -36,11 +36,6 @@
       "<leader>fi" = {
         action = "find_files";
         desc = "Search files";
-      };
-
-      "<leader>gs" = {
-        action = "grep_string";
-        desc = "Search string under cursor or selection";
       };
 
       "<leader>fb" = {
