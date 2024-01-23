@@ -9,6 +9,7 @@ import ./chatgpt.nix options ++
 import ./gitsigns.nix options ++
 import ./hlslens.nix options ++
 import ./lspsaga.nix options ++
+import ./nvim_tree.nix options ++
 [
   {
     action = "k<S-j>";
@@ -111,12 +112,6 @@ import ./lspsaga.nix options ++
     key = "<S-h>";
     mode = "n";
     options = options "Navigate to left tab";
-  }
-  {
-    action = "<CMD>NvimTreeToggle<CR>";
-    key = "<C-n>";
-    mode = "n";
-    options = options "Toggle file explorer";
   }
   {
     action = "<Nop>";
