@@ -30,4 +30,10 @@ options:
       mode = "n";
       options = options "Gitsigns reset_hunk";
   }
+  {
+      action = "<CMD>Gitsigns preview_hunk<CR>";
+      key = "<leader>gp";
+      mode = "n";
+      options = options "Gitsigns preview_hunk";
+  }
 ]
