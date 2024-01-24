@@ -31,7 +31,6 @@
   // import ./plugins/nvim-tree.nix         # File explorer
   // import ./plugins/packer.nix            # For unsupported packages
   // import ./plugins/specs.nix             # Cursor dance
-  // import ./plugins/surround.nix          # Modify delimiter pairs
   // import ./plugins/telescope.nix         # Fuzzy find all the things
   // import ./plugins/todo-comments.nix     # To-Do search
   // import ./plugins/toggleterm.nix        # Floating terminal
@@ -45,6 +44,7 @@
     hop-nvim         # Quick navigation
     nvim-hlslens     # Nice search highlighting
     nvim-scrollbar   # Scrollbar
+    nvim-surround    # Manipulate delimiter pairs
     vim-smoothie     # Smooth scrolling
     windows-nvim     # Maximize windows
     zen-mode-nvim    # Zen mode
@@ -54,6 +54,7 @@
   + import ./lua
   + ''
     require('hop').setup{}
+    require('nvim-surround').setup{}
     require('scrollbar').setup{}
     require('windows').setup{}
 
