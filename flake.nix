@@ -2,9 +2,8 @@
   description = "asungy's Neovim configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-
     flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nixvim.url = "github:nix-community/nixvim";
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
@@ -21,13 +20,20 @@
           inherit (nixvim.legacyPackages.${system}) makeNixvimWithModule;
         };
         default = config.default;
-        rust = config.rust;
+        deno = config.deno;
         python = config.python;
+        rust = config.rust;
         ts = config.ts;
       in
       {
         packages = {
-          inherit default rust python ts;
+          inherit
+            default
+            deno
+            python
+            rust
+            ts
+          ;
         };
       }
     );

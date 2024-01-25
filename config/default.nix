@@ -1,6 +1,10 @@
 { pkgs, makeNixvimWithModule, }:
 let
   default = import ./default { inherit pkgs; };
+  makeModule = path: makeNixvimWithModule {
+    inherit pkgs;
+    module = import path { inherit pkgs default; };
+  };
 in
 {
   default = makeNixvimWithModule {
@@ -20,18 +24,8 @@ in
     };
   };
 
-  rust = makeNixvimWithModule {
-    inherit pkgs;
-    module = import ./rust { inherit pkgs default; };
-  };
-
-  python = makeNixvimWithModule {
-    inherit pkgs;
-    module = import ./python { inherit pkgs default; };
-  };
-
-  ts = makeNixvimWithModule {
-    inherit pkgs;
-    module = import ./ts { inherit pkgs default; };
-  };
+  deno = makeModule ./deno;
+  python = makeModule ./python;
+  rust = makeModule ./rust;
+  ts = makeModule ./ts;
 }

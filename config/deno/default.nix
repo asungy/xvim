@@ -13,11 +13,11 @@
     // {
       lsp = {
         enable = true;
-        servers.tsserver.enable = true;
+        servers.denols.enable = true;
         preConfig = builtins.readFile ../_common/lsp_preconfig.lua;
       };
     };
 
-    extraPackages = default.extraPackages ++ [ pkgs.nodejs_21 ];
+    extraPackages = default.extraPackages ++ [ pkgs.deno ];
   };
 }
