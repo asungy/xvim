@@ -25,6 +25,7 @@ in
   };
 
   deno = makeModule ./deno;
+  go = makeModule ./go;
   python = makeModule ./python;
   rust = makeModule ./rust;
   ts = makeModule ./ts;

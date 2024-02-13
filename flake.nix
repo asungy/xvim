@@ -21,6 +21,7 @@
         };
         default = config.default;
         deno = config.deno;
+        go = config.go;
         python = config.python;
         rust = config.rust;
         ts = config.ts;
@@ -30,6 +31,7 @@
           inherit
             default
             deno
+            go
             python
             rust
             ts
