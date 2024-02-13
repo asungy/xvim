@@ -2,6 +2,13 @@ do
 
 local home = vim.fn.expand("$HOME")
 
+WELCOME_MESSAGE = [[
+ 
+     If you don't ask the right questions,
+        you don't get the right answers.
+                                      ~ Robert Half
+]]
+
 local config = {
   yank_register = "+",
   edit_with_instructions = {
