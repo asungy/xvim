@@ -33,4 +33,10 @@
       "wat"
     ];
   }
+  {
+    event = [ "FileType" ];
+    pattern = [ "go" ];
+    command = "setlocal noexpandtab";
+    desc = "Use tabs instead of spaces for Go files";
+  }
 ]
