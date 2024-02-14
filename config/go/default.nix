@@ -18,7 +18,7 @@
       };
     };
 
-    extraPackages = default.extraPackages
-      ++ [ pkgs.go ];
+    extraPackages = with pkgs; default.extraPackages
+      ++ [ go delve ];
   };
 }
