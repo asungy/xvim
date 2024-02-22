@@ -66,12 +66,6 @@ import ./nvim_tree.nix options ++
     options = options "Navigate to bottom adjacent buffer";
   }
   {
-    action = "<C-w>k";
-    key = "<C-k>";
-    mode = "n";
-    options = options "Navigate to top adjacent buffer";
-  }
-  {
     action = "<C-w>l";
     key = "<C-l>";
     mode = "n";
