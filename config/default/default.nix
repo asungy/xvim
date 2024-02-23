@@ -64,6 +64,7 @@
   ;
 
   extraPackages = with pkgs; [
+    git
     ripgrep
   ];
 }
