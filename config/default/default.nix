@@ -63,5 +63,7 @@
   ''
   ;
 
-  extraPackages = with pkgs; [];
+  extraPackages = with pkgs; [
+    ripgrep
+  ];
 }
