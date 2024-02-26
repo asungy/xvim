@@ -34,6 +34,7 @@
     ];
   }
   {
+    # NOTE: This auto-command breaks `gopls` if you set the filetype of a buffer to Go.
     event = [ "FileType" ];
     pattern = [ "go" ];
     command = "setlocal noexpandtab";

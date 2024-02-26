@@ -33,10 +33,13 @@
         desc = "Search Git files";
       };
 
-      "<leader>fi" = {
-        action = "find_files";
-        desc = "Search files";
-      };
+      # NOTE: This has been moved to `keymaps/default.nix` in order to pass in
+      # arguments.
+      #
+      # "<leader>fi" = {
+      #   action = "find_files";
+      #   desc = "Search files";
+      # };
 
       "<leader>fb" = {
         action = "buffers";
@@ -53,25 +56,10 @@
         desc = "Fuzzy find text in current buffer";
       };
 
-      # "<leader>ld" = {
-      #   action = "lsp_definitions";
-      #   desc = "Go to definitions";
-      # };
-
-      # "<leader>lr" = {
-      #   action = "lsp_references";
-      #   desc = "Go to references";
-      # };
-
       "<leader>ls" = {
         action = "lsp_document_symbols";
         desc = "Go to symbols";
       };
-
-      # "<leader>lt" = {
-      #   action = "lsp_type_definitions";
-      #   desc = "Go to type definitions";
-      # };
 
       "<leader>li" = {
         action = "lsp_implementations";

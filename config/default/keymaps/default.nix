@@ -10,6 +10,7 @@ import ./gitsigns.nix options ++
 import ./hlslens.nix options ++
 import ./lspsaga.nix options ++
 import ./nvim_tree.nix options ++
+import ./telescope.nix options ++
 [
   {
     action = "k<S-j>";
@@ -58,12 +59,6 @@ import ./nvim_tree.nix options ++
     key = "<C-h>";
     mode = "n";
     options = options "Navigate to left adjacent buffer";
-  }
-  {
-    action = "<C-w>j";
-    key = "<C-j>";
-    mode = "n";
-    options = options "Navigate to bottom adjacent buffer";
   }
   {
     action = "<C-w>l";
@@ -154,12 +149,6 @@ import ./nvim_tree.nix options ++
     key = "S";
     mode = "";
     options = options "Hop to 2 char";
-  }
-  {
-    action = "<CMD>lua require 'telescope.builtin'.diagnostics{bufnr=0}<CR>";
-    key = "<leader>ls";
-    mode = "n";
-    options = options "List diagnostics";
   }
   {
     action = "<CMD>ZenMode<CR>";
