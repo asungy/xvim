@@ -28,5 +28,6 @@ in
   go = makeModule ./go;
   python = makeModule ./python;
   rust = makeModule ./rust;
+  stacked = makeModule ./stacked;
   ts = makeModule ./ts;
 }

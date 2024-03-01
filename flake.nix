@@ -24,6 +24,7 @@
         go = config.go;
         python = config.python;
         rust = config.rust;
+        stacked = config.stacked;
         ts = config.ts;
       in
       {
@@ -34,6 +35,7 @@
             go
             python
             rust
+            stacked
             ts
           ;
         };
