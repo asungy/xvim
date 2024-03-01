@@ -16,6 +16,7 @@
         servers.tsserver.enable = true;
         servers.gopls.enable = true;
         servers.html.enable = true;
+        servers.htmx.enable = true;
         servers.tailwindcss.enable = true;
         preConfig = builtins.readFile ../_common/lsp_preconfig.lua;
       };

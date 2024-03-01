@@ -1,3 +1,4 @@
+# NOTE: As of 2024/03/01, this package is broken in nixpkgs-unstable.
 {
   alpha = {
     enable = true;

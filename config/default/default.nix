@@ -12,7 +12,6 @@
   keymaps = import ./keymaps;
 
   plugins = {}
-  // import ./plugins/alpha.nix             # Greeter
   // import ./plugins/auto-save.nix         # Auto save
   // import ./plugins/autopairs.nix         # Auto-closing pairs
   // import ./plugins/barbar.nix            # Tabline
