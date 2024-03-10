@@ -174,4 +174,11 @@ import ./telescope.nix options ++
     mode = "n";
     options = options "Vertical split new buffer";
   }
+  {
+
+    action = "<CMD><%bd|e#|bd#CR>";
+    key = "<leader>bd";
+    mode = "n";
+    options = options "Delete all open buffers except the current one";
+  }
 ]
