@@ -168,4 +168,10 @@ import ./telescope.nix options ++
     mode = "t";
     options = options "Escape from terminal";
   }
+  {
+    action = "<CMD>vnew<CR>";
+    key = "<leader>vz";
+    mode = "n";
+    options = options "Vertical split new buffer";
+  }
 ]
