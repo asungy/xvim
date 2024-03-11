@@ -176,7 +176,7 @@ import ./telescope.nix options ++
   }
   {
 
-    action = "<CMD><%bd|e#|bd#CR>";
+    action = "<CMD>%bd|e#|bd#<CR>";
     key = "<leader>bd";
     mode = "n";
     options = options "Delete all open buffers except the current one";
