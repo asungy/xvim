@@ -14,7 +14,6 @@
   plugins = {}
   // import ./plugins/auto-save.nix         # Auto save
   // import ./plugins/autopairs.nix         # Auto-closing pairs
-  // import ./plugins/barbar.nix            # Tabline
   // import ./plugins/cmp.nix               # Completion
   // import ./plugins/comment-nvim.nix      # Convenint commenting
   // import ./plugins/gitsigns.nix          # Git integration for buffers
