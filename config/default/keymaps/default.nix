@@ -121,10 +121,10 @@ import ./telescope.nix options ++
     options = options "Vertically split window";
   }
   {
-    action = "<CMD>tabnew<CR>";
+    action = "<CMD>tab split<CR>";
     key = "<leader>nt";
     mode = "n";
-    options = options "Create new tab";
+    options = options "Create new tab with current buffer";
   }
   {
     action = "<CMD>MaximizerToggle!<CR>";
