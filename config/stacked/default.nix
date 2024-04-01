@@ -13,12 +13,15 @@
     // {
       lsp = {
         enable = true;
-        servers.gopls.enable = true;
-        servers.html.enable = true;
-        servers.htmx.enable = true;
-        servers.tailwindcss.enable = true;
-        servers.terraformls.enable = true;
-        servers.tsserver.enable = true;
+        servers = {
+          gopls.enable = true;
+          html.enable = true;
+          htmx.enable = true;
+          nixd.enable = true;
+          tailwindcss.enable = true;
+          terraformls.enable = true;
+          tsserver.enable = true;
+        };
         preConfig = builtins.readFile ../_common/lsp_preconfig.lua;
       };
     };
