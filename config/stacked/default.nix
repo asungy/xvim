@@ -3,7 +3,7 @@
   config = {
     autoCmd = default.autoCmd;
     colorschemes = default.colorschemes;
-    options = default.options;
+    opts = default.options;
     extraConfigLua = default.extraConfigLua;
     extraPlugins = default.extraPlugins;
     globals = default.globals;

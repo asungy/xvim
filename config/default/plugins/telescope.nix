@@ -2,7 +2,7 @@
   telescope = {
     enable = true;
 
-    extensions.fzf-native = {
+    extensions.fzf-native.settings = {
       enable = true;
       caseMode = "smart_case";
       fuzzy = true;
@@ -10,7 +10,7 @@
       overrideGenericSorter = true;
     };
 
-    extraOptions = {
+    settings = {
       pickers.buffers = {
         show_all_buffers = true;
         sort_lastused = true;
@@ -25,12 +25,12 @@
     keymaps = {
       "<leader>rg" = {
         action = "live_grep";
-        desc = "Search text";
+        options.desc = "Search text";
       };
 
       "<leader>gi" = {
         action = "git_files";
-        desc = "Search Git files";
+        options.desc = "Search Git files";
       };
 
       # NOTE: This has been moved to `keymaps/default.nix` in order to pass in
@@ -38,32 +38,32 @@
       #
       # "<leader>fi" = {
       #   action = "find_files";
-      #   desc = "Search files";
+      #   options.desc = "Search files";
       # };
 
       "<leader>fb" = {
         action = "buffers";
-        desc = "Lists open buffers";
+        options.desc = "Lists open buffers";
       };
 
       "<leader>fr" = {
         action = "registers";
-        desc = "Lists registers";
+        options.desc = "Lists registers";
       };
 
       "<leader>bl" = {
         action = "current_buffer_fuzzy_find";
-        desc = "Fuzzy find text in current buffer";
+        options.desc = "Fuzzy find text in current buffer";
       };
 
       "<leader>ls" = {
         action = "lsp_document_symbols";
-        desc = "Go to symbols";
+        options.desc = "Go to symbols";
       };
 
       "<leader>li" = {
         action = "lsp_implementations";
-        desc = "Go to implementations";
+        options.desc = "Go to implementations";
       };
 
     };

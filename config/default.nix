@@ -18,7 +18,7 @@ in
         extraPlugins = default.extraPlugins;
         globals = default.globals;
         keymaps = default.keymaps;
-        options = default.options;
+        opts = default.options;
         plugins = default.plugins // import ./default/lsp.nix;
       };
     };

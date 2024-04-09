@@ -1,13 +1,11 @@
 {
-  nvim-cmp = {
+  cmp = {
     enable = true;
 
-    window = {
+    settings.window = {
       completion.border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│"];
       documentation.border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│"];
     };
-
-    snippet.expand = "luasnip";
   };
 
   cmp-buffer.enable = true;
