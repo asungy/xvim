@@ -21,12 +21,13 @@
           inherit (nixvim.legacyPackages.${system}) makeNixvimWithModule;
         };
         default = config.default;
-        deno = config.deno;
-        go = config.go;
-        python = config.python;
-        rust = config.rust;
+        deno    = config.deno;
+        go      = config.go;
+        lua     = config.lua;
+        python  = config.python;
+        rust    = config.rust;
         stacked = config.stacked;
-        ts = config.ts;
+        ts      = config.ts;
       in
       {
         packages = {
@@ -34,6 +35,7 @@
             default
             deno
             go
+            lua
             python
             rust
             stacked

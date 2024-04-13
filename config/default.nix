@@ -24,10 +24,11 @@ in
     };
   };
 
-  deno = makeModule ./deno;
-  go = makeModule ./go;
-  python = makeModule ./python;
-  rust = makeModule ./rust;
+  deno    = makeModule ./deno;
+  go      = makeModule ./go;
+  lua     = makeModule ./lua;
+  python  = makeModule ./python;
+  rust    = makeModule ./rust;
   stacked = makeModule ./stacked;
-  ts = makeModule ./ts;
+  ts      = makeModule ./ts;
 }
