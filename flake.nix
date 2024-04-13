@@ -20,27 +20,17 @@
           inherit pkgs;
           inherit (nixvim.legacyPackages.${system}) makeNixvimWithModule;
         };
-        default = config.default;
-        deno    = config.deno;
-        go      = config.go;
-        lua     = config.lua;
-        python  = config.python;
-        rust    = config.rust;
-        stacked = config.stacked;
-        ts      = config.ts;
       in
       {
         packages = {
-          inherit
-            default
-            deno
-            go
-            lua
-            python
-            rust
-            stacked
-            ts
-          ;
+          default = config.default;
+          deno    = config.deno;
+          go      = config.go;
+          lua     = config.lua;
+          python  = config.python;
+          rust    = config.rust;
+          stacked = config.stacked;
+          ts      = config.ts;
         };
       }
     );
