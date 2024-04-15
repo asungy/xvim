@@ -182,6 +182,7 @@ local config = {
   },
 }
 
-require("chatgpt").setup(config)
+-- Temporarily disabled chatgpt
+-- require("chatgpt").setup(config)
 
 end
