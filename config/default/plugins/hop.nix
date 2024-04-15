@@ -1,0 +1,5 @@
+{
+  hop = {
+    enable = true;
+  };
+}
