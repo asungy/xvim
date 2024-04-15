@@ -1,11 +1,13 @@
 {
   toggleterm = {
     enable = true;
-    direction = "float";
-    openMapping = "<A-\\>";
-    floatOpts = {
-      border = "curved";
-      winblend = 3;
+    settings = {
+      direction = "float";
+      openMapping = "<A-\\>";
+      float_opts = {
+        border = "curved";
+        winblend = 3;
+      };
     };
   };
 }
