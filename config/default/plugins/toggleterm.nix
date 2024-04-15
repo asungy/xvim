@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       direction = "float";
-      openMapping = "<A-\\>";
+      open_mapping = "[[<A-\\>]]";
       float_opts = {
         border = "curved";
         winblend = 3;
