@@ -31,6 +31,7 @@
     default.extraPackages
       ++ [
         rust-toolchain
+        pkgs.gcc
         pkgs.gdb
       ];
   };
