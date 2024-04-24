@@ -48,17 +48,7 @@
     zen-mode-nvim    # Zen mode
   ];
 
-  extraConfigLua = ""
-  + import ./lua
-  + ''
-    require('nvim-surround').setup{}
-    require('scrollbar').setup{}
-    require('windows').setup{}
-
-    -- This needs to be after `hlslens` setup.
-    require('scrollbar.handlers.search').setup{}
-  ''
-  ;
+  extraConfigLua = import ./lua ;
 
   extraPackages = with pkgs; [
     git
