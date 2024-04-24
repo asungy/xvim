@@ -51,7 +51,6 @@
   extraConfigLua = ""
   + import ./lua
   + ''
-    require('hop').setup{}
     require('nvim-surround').setup{}
     require('scrollbar').setup{}
     require('windows').setup{}
