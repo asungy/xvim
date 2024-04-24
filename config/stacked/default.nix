@@ -17,7 +17,6 @@
           gopls.enable = true;
           html.enable = true;
           htmx.enable = true;
-          nixd.enable = true;
           tailwindcss.enable = true;
           terraformls.enable = true;
           tsserver.enable = true;
