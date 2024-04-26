@@ -28,7 +28,7 @@
     extraPackages = with pkgs; default.extraPackages ++ [
       delve
       go
-      nodejs_21
+      nodejs_22
       terraform
     ];
   };

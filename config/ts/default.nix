@@ -18,6 +18,6 @@
       };
     };
 
-    extraPackages = default.extraPackages ++ [ pkgs.nodejs_21 ];
+    extraPackages = default.extraPackages ++ [ pkgs.nodejs_22 ];
   };
 }
