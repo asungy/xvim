@@ -7,7 +7,7 @@
 
   autoCmd = import ./autocmd;
 
-  options = import ./options;
+  opts = import ./options;
 
   keymaps = import ./keymaps;
 
