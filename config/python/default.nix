@@ -1,17 +1,10 @@
 { pkgs, default, }:
 {
-  config = {
-    autoCmd = default.autoCmd;
-    colorschemes = default.colorschemes;
-    opts = default.options;
-    globals = default.globals;
-
-    plugins = default.plugins
-    // {
-      lsp = {
-        enable = true;
+  config = default // {
+    plugins = default.plugins //
+    {
+      lsp = default.plugins.lsp // {
         servers.pylsp.enable = true;
-        preConfig = builtins.readFile ../_common/lsp_preconfig.lua;
       };
     };
 

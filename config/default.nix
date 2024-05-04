@@ -9,19 +9,7 @@ in
 {
   default = makeNixvimWithModule {
     inherit pkgs;
-    module = {
-      config = {
-        autoCmd = default.autoCmd;
-        colorschemes = default.colorschemes;
-        extraConfigLua = default.extraConfigLua;
-        extraPackages = default.extraPackages;
-        extraPlugins = default.extraPlugins;
-        globals = default.globals;
-        keymaps = default.keymaps;
-        opts = default.options;
-        plugins = default.plugins // import ./default/lsp.nix;
-      };
-    };
+    module = { config = default; };
   };
 
   deno    = makeModule ./deno;
