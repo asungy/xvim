@@ -10,6 +10,7 @@
           html.enable = true;
           htmx.enable = true;
           tailwindcss.enable = true;
+          templ.enable = true;
           terraformls.enable = true;
           tsserver.enable = true;
         };
