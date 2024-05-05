@@ -40,4 +40,10 @@
     command = "setlocal noexpandtab";
     desc = "Use tabs instead of spaces for Go files";
   }
+  {
+    event = [ "BufWinEnter" ];
+    pattern = [ "*.templ" ];
+    command = "set filetype=templ";
+    desc = "Set templ filetype";
+  }
 ]
