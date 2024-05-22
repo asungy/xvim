@@ -145,10 +145,10 @@ import ./telescope.nix options ++
     options = options "Hop to 1 char";
   }
   {
-    action = "<CMD>HopChar2MW<CR>";
+    action = "xi";
     key = "S";
     mode = "";
-    options = options "Hop to 2 char";
+    options = options "Delete character under cursor and enter insert mode";
   }
   {
     action = "<CMD>ZenMode<CR>";
