@@ -126,12 +126,6 @@ import ./telescope.nix options ++
     options = options "Create new tab with current buffer";
   }
   {
-    action = "<CMD>MaximizerToggle!<CR>";
-    key = "<leader>mt";
-    mode = "n";
-    options = options "Toggle window maximization";
-  }
-  {
     action = "<CMD>terminal<CR>";
     key = "<leader>tr";
     mode = "n";
