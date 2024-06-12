@@ -40,7 +40,6 @@
   ;
 
   extraPlugins = with pkgs.vimPlugins; [
-    ChatGPT-nvim     # Career existentialism
     nvim-hlslens     # Nice search highlighting
     nvim-scrollbar   # Scrollbar
     nvim-surround    # Manipulate delimiter pairs
