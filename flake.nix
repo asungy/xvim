@@ -6,7 +6,8 @@
     flake-utils.url = "github:numtide/flake-utils";
     nixvim = {
       url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # Currently an issue following nixpkgs-unstable: https://github.com/nix-community/nixvim/issues/1660
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
