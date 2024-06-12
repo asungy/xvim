@@ -150,12 +150,6 @@ import ./telescope.nix options ++
     options = options "Delete character under cursor and enter insert mode";
   }
   {
-    action = "<CMD>ZenMode<CR>";
-    key = "<leader>zn";
-    mode = "n";
-    options = options "Zen mode";
-  }
-  {
     action = "<CMD>WindowsMaximize<CR>";
     key = "<C-w>z";
     mode = "n";

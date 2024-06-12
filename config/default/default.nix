@@ -45,7 +45,6 @@
     nvim-surround    # Manipulate delimiter pairs
     vim-smoothie     # Smooth scrolling
     windows-nvim     # Maximize windows
-    zen-mode-nvim    # Zen mode
   ];
 
   extraConfigLua = import ./lua ;
