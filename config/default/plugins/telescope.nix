@@ -41,6 +41,11 @@
       #   options.desc = "Search files";
       # };
 
+      "<leader>cm" = {
+        action = "command_history";
+        options.desc = "Lists command history";
+      };
+
       "<leader>fb" = {
         action = "buffers";
         options.desc = "Lists open buffers";
