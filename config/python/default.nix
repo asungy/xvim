@@ -14,7 +14,7 @@
         iron-nvim
       ];
 
-    extraPackages = with pkgs.python311Packages;
+    extraPackages = with pkgs.python312Packages;
       default.extraPackages
       ++ [
         python
