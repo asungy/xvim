@@ -46,4 +46,14 @@
     command = "set filetype=templ";
     desc = "Set templ filetype";
   }
+  {
+    event = [ "RecordingEnter" ];
+    command = "lua print(\"Recording: \" .. tostring(vim.inspect(vim.fn.reg_recording())))";
+    desc = "Notify when starting to record macro";
+  }
+  {
+    event = [ "RecordingLeave" ];
+    command = "lua print(\"RecordingLeave\")";
+    desc = "Notify when stopped recording macro";
+  }
 ]
