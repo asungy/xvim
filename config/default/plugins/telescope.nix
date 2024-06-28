@@ -20,6 +20,13 @@
           };
         };
       };
+      pickers.marks = {
+        mappings = {
+          i = {
+            "<C-d>" = "delete_mark";
+          };
+        };
+      };
     };
 
     keymaps = {
