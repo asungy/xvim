@@ -17,6 +17,5 @@ in
   lua     = makeModule ./lua;
   python  = makeModule ./python;
   rust    = makeModule ./rust;
-  stacked = makeModule ./stacked;
   ts      = makeModule ./ts;
 }

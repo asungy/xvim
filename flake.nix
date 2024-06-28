@@ -36,7 +36,6 @@
           lua     = config.lua;
           python  = config.python;
           rust    = config.rust;
-          stacked = config.stacked;
           ts      = config.ts;
         };
       }
