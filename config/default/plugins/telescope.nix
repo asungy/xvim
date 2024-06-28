@@ -56,6 +56,11 @@
         options.desc = "Lists registers";
       };
 
+      "<leader>ma" = {
+        action = "marks";
+        options.desc = "Lists marks";
+      };
+
       "<leader>bl" = {
         action = "current_buffer_fuzzy_find";
         options.desc = "Fuzzy find text in current buffer";
