@@ -13,7 +13,6 @@
 
   plugins = {}
   // import ./plugins/auto-save.nix         # Auto save
-  // import ./plugins/autopairs.nix         # Auto-closing pairs
   // import ./plugins/cmp.nix               # Completion
   // import ./plugins/comment.nix           # Convenient commenting
   // import ./plugins/gitsigns.nix          # Git integration for buffers
