@@ -12,12 +12,6 @@ import ./nvim_tree.nix options ++
 import ./telescope.nix options ++
 [
   {
-    action = "k<S-j>";
-    key = "<S-k>";
-    mode = "n";
-    options = options "Join current line with one above it";
-  }
-  {
     action = "<gv";
     key = "<";
     mode = "v";
@@ -48,7 +42,7 @@ import ./telescope.nix options ++
     options = options "Move text down in visual block mode";
   }
   {
-    action = ":move '>-2<CR>gv-gv";
+    action = ":move '<-2<CR>gv-gv";
     key = "<A-k>";
     mode = "x";
     options = options "Move text up in visual block mode";
@@ -167,5 +161,11 @@ import ./telescope.nix options ++
     key = "<leader>bd";
     mode = "n";
     options = options "Delete all open buffers except the current one";
+  }
+  {
+    action = "<CMD>Neogit<CR>";
+    key = "<C-t>";
+    mode = "n";
+    options = options "Open Neogit";
   }
 ]
