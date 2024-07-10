@@ -11,7 +11,7 @@
 
     extraPackages = default.extraPackages
       ++ [
-        pkgs.zigpkgs."0.13.0"
+        pkgs.zigpkgs."0.12.0"
         pkgs.gdb
       ];
   };
