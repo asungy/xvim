@@ -12,10 +12,11 @@ in
     module = { config = default; };
   };
 
-  deno    = makeModule ./deno;
-  go      = makeModule ./go;
-  lua     = makeModule ./lua;
-  python  = makeModule ./python;
-  rust    = makeModule ./rust;
-  ts      = makeModule ./ts;
+  deno   = makeModule ./deno;
+  go     = makeModule ./go;
+  lua    = makeModule ./lua;
+  python = makeModule ./python;
+  rust   = makeModule ./rust;
+  ts     = makeModule ./ts;
+  zig    = makeModule ./zig;
 }
