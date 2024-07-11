@@ -1,0 +1,3 @@
+{
+  zen-mode.enable = true;
+}

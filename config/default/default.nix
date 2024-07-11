@@ -19,9 +19,9 @@
   // import ./plugins/harpoon.nix           # Quick file list
   // import ./plugins/hop.nix               # Quick navigation
   // import ./plugins/indent-blankline.nix  # Indentation guides
+  // import ./plugins/lsp.nix               # Language server
   // import ./plugins/lspsaga.nix           # LSP on steroids
   // import ./plugins/lualine.nix           # Status line
-  // import ./plugins/lsp.nix               # Language server
   // import ./plugins/markdown-preview.nix  # Markdown previewer
   // import ./plugins/navbuddy.nix          # Navigation popup
   // import ./plugins/neogit.nix            # Git interface
@@ -36,6 +36,7 @@
   // import ./plugins/treesitter.nix        # Parsing system
   // import ./plugins/trouble.nix           # Pretty diagnostics
   // import ./plugins/which-key.nix         # Key suggestions
+  // import ./plugins/zen-mode.nix          # Center buffer.
   ;
 
   extraPlugins = with pkgs.vimPlugins; [
