@@ -1,6 +1,6 @@
 {
   auto-save = {
     enable = true;
-    executionMessage.message = "";
+    settings.execution_message.message = "";
   };
 }
