@@ -45,6 +45,11 @@
     nvim-surround    # Manipulate delimiter pairs
     vim-smoothie     # Smooth scrolling
     windows-nvim     # Maximize windows
+
+    # Color schemes.
+    cyberdream-nvim
+    gruvbox
+    onedarkpro-nvim
   ];
 
   extraConfigLua = import ./lua ;
