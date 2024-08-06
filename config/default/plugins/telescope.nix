@@ -40,13 +40,10 @@
         options.desc = "Search Git files";
       };
 
-      # NOTE: This has been moved to `keymaps/default.nix` in order to pass in
-      # arguments.
-      #
-      # "<leader>fi" = {
-      #   action = "find_files";
-      #   options.desc = "Search files";
-      # };
+      "<leader>cs" = {
+        action = "colorscheme";
+        options.desc = "List colorschemes";
+      };
 
       "<leader>cm" = {
         action = "command_history";
