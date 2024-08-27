@@ -126,15 +126,9 @@ import ./telescope.nix options ++
     options = options "Open terminal";
   }
   {
-    action = "<CMD>HopChar1MW<CR>";
-    key = "s";
-    mode = "";
-    options = options "Hop to 1 char";
-  }
-  {
     action = "xi";
     key = "S";
-    mode = "";
+    mode = "n";
     options = options "Delete character under cursor and enter insert mode";
   }
   {
@@ -167,5 +161,17 @@ import ./telescope.nix options ++
     key = "<C-t>";
     mode = "n";
     options = options "Open Neogit";
+  }
+  {
+    action = "<CMD>lua require('flash').jump()<CR>";
+    key = "s";
+    mode = [ "n" "x" ];
+    options = options "Quick jump to character";
+  }
+  {
+    action = "<CMD>lua require('flash').treesitter()<CR>";
+    key = "<C-s>";
+    mode = [ "n" "x" ];
+    options = options "Quick jump to Treesitter node";
   }
 ]

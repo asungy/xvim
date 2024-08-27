@@ -15,9 +15,9 @@
   // import ./plugins/auto-save.nix         # Auto save
   // import ./plugins/cmp.nix               # Completion
   // import ./plugins/comment.nix           # Convenient commenting
+  // import ./plugins/flash.nix             # Quick character navigation
   // import ./plugins/gitsigns.nix          # Git integration for buffers
   // import ./plugins/harpoon.nix           # Quick file list
-  // import ./plugins/hop.nix               # Quick navigation
   // import ./plugins/indent-blankline.nix  # Indentation guides
   // import ./plugins/lsp.nix               # Language server
   // import ./plugins/lspsaga.nix           # LSP on steroids

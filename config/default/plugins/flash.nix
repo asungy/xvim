@@ -1,5 +1,5 @@
 {
-  hop = {
+  flash = {
     enable = true;
   };
 }
