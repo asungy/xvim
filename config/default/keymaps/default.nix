@@ -174,4 +174,10 @@ import ./telescope.nix options ++
     mode = [ "n" "x" ];
     options = options "Quick jump to Treesitter node";
   }
+  {
+    action = "<CMD>ZenMode<CR>";
+    key = "<leader>z";
+    mode = "n";
+    options = options "Zen mode";
+  }
 ]
