@@ -10,6 +10,15 @@
       };
     };
     extraPackages = with pkgs; default.extraPackages
-      ++ [ go delve ];
+      ++ [
+        go
+        delve
+
+        golint
+        gosec
+        go-tools
+        gocyclo
+        errcheck
+      ];
   };
 }
