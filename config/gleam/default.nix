@@ -10,6 +10,10 @@
     };
 
     extraPackages = with pkgs; default.extraPackages
-      ++ [ gleam ];
+      ++ [
+        erlang
+        gleam
+        rebar3
+      ];
   };
 }
