@@ -8,5 +8,8 @@
         servers.gleam.enable = true;
       };
     };
+
+    extraPackages = with pkgs; default.extraPackages
+      ++ [ gleam ];
   };
 }
