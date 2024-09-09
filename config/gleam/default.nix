@@ -5,9 +5,8 @@
     {
       lsp = default.plugins.lsp //
       {
-        servers.denols.enable = true;
+        servers.gleam.enable = true;
       };
     };
-    extraPackages = default.extraPackages ++ [ pkgs.deno ];
   };
 }

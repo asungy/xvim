@@ -12,7 +12,7 @@ in
     module = { config = default; };
   };
 
-  deno   = makeModule ./deno;
+  gleam  = makeModule ./gleam;
   go     = makeModule ./go;
   lua    = makeModule ./lua;
   python = makeModule ./python;

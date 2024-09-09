@@ -41,7 +41,7 @@
       {
         packages = {
           default = config.default;
-          deno    = config.deno;
+          gleam   = config.gleam;
           go      = config.go;
           lua     = config.lua;
           python  = config.python;
