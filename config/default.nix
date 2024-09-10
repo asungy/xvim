@@ -12,7 +12,6 @@ in
     module = { config = default; };
   };
 
-  gleam  = makeModule ./gleam;
   go     = makeModule ./go;
   lua    = makeModule ./lua;
   python = makeModule ./python;

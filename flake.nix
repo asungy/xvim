@@ -41,7 +41,6 @@
       {
         packages = {
           default = config.default;
-          gleam   = config.gleam;
           go      = config.go;
           lua     = config.lua;
           python  = config.python;
