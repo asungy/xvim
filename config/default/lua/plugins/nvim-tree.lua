@@ -5,16 +5,17 @@ do
   local HEIGHT_RATIO = 0.8
   local WIDTH_RATIO = 0.5
   require("nvim-tree").setup({
-    view = {
+    actions = {
       open_file = {
         window_picker = {
           enable = false,
         },
       },
+    };
+    view = {
       float = {
         enable = true,
         quit_on_focus_loss = true,
-        hijack_unnamed_buffer_when_opening = true,
         -- Make the neovim window appear in the center of the screen
         open_win_config = function()
           local screen_w = vim.opt.columns:get()
