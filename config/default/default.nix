@@ -27,7 +27,6 @@
   // import ./plugins/neogit.nix            # Git interface
   // import ./plugins/noice.nix             # UI popup menu
   // import ./plugins/notify.nix            # Notifications
-  // import ./plugins/nvim-tree.nix         # File explorer
   // import ./plugins/packer.nix            # For unsupported packages
   // import ./plugins/specs.nix             # Cursor dance
   // import ./plugins/telescope.nix         # Fuzzy find all the things
@@ -43,6 +42,7 @@
     nvim-hlslens     # Nice search highlighting
     nvim-scrollbar   # Scrollbar
     nvim-surround    # Manipulate delimiter pairs
+    nvim-tree-lua    # File explorer
     vim-smoothie     # Smooth scrolling
     windows-nvim     # Maximize windows
 
