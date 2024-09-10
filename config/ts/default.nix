@@ -3,10 +3,8 @@
   config = default // {
     plugins = default.plugins //
     {
-      lsp = default.plugins.lsp //
-      {
-        servers.tsserver.enable = true;
-      };
+      # Drop-in replacement for tsserver.
+      typescript-tools.enable = true;
     };
     extraPackages = default.extraPackages ++ [ pkgs.nodejs_22 ];
   };
