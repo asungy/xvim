@@ -1,7 +1,7 @@
 {
   lualine = {
     enable = true;
-    extensions = ["nvim-tree" "toggleterm" "fzf"];
+    extensions = ["toggleterm" "fzf"];
     globalstatus = true;
     sections = {
       lualine_c = [

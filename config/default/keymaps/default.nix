@@ -8,7 +8,7 @@ in
 import ./gitsigns.nix options ++
 import ./hlslens.nix options ++
 import ./lspsaga.nix options ++
-import ./nvim_tree.nix options ++
+import ./neo-tree.nix options ++
 import ./telescope.nix options ++
 [
   {

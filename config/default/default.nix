@@ -36,13 +36,13 @@
   // import ./plugins/trouble.nix           # Pretty diagnostics
   // import ./plugins/which-key.nix         # Key suggestions
   // import ./plugins/zen-mode.nix          # Center buffer.
+  // import ./plugins/neo-tree.nix          # File explorer.
   ;
 
   extraPlugins = with pkgs.vimPlugins; [
     nvim-hlslens     # Nice search highlighting
     nvim-scrollbar   # Scrollbar
     nvim-surround    # Manipulate delimiter pairs
-    nvim-tree-lua    # File explorer
     vim-smoothie     # Smooth scrolling
     windows-nvim     # Maximize windows
 
