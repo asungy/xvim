@@ -15,6 +15,7 @@
   // import ./plugins/auto-save.nix         # Auto save
   // import ./plugins/cmp.nix               # Completion
   // import ./plugins/comment.nix           # Convenient commenting
+  // import ./plugins/dashboard.nix         # Startup dashboard.
   // import ./plugins/flash.nix             # Quick character navigation
   // import ./plugins/gitsigns.nix          # Git integration for buffers
   // import ./plugins/harpoon.nix           # Quick file list
@@ -24,6 +25,7 @@
   // import ./plugins/lualine.nix           # Status line
   // import ./plugins/markdown-preview.nix  # Markdown previewer
   // import ./plugins/navbuddy.nix          # Navigation popup
+  // import ./plugins/neo-tree.nix          # File explorer.
   // import ./plugins/neogit.nix            # Git interface
   // import ./plugins/noice.nix             # UI popup menu
   // import ./plugins/notify.nix            # Notifications
@@ -36,7 +38,6 @@
   // import ./plugins/trouble.nix           # Pretty diagnostics
   // import ./plugins/which-key.nix         # Key suggestions
   // import ./plugins/zen-mode.nix          # Center buffer.
-  // import ./plugins/neo-tree.nix          # File explorer.
   ;
 
   extraPlugins = with pkgs.vimPlugins; [
