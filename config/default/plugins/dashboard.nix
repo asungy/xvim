@@ -4,6 +4,7 @@
     settings = {
       change_to_vcs_root = true;
       config = {
+        disable_move = true;
         footer = [
           "Made with 󱄅 "
         ];
@@ -13,6 +14,16 @@
         };
         project.enable = false;
         packages.enable = false;
+        shortcut = [
+          {
+            action = "Neotree position=current";
+            desc = "File tree";
+            group = "DashboardShortCutIcon";
+            icon = " ";
+            icon_hl = "@variable";
+            key = "n";
+          }
+        ];
         week_header = {
           enable = true;
         };
