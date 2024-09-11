@@ -9,23 +9,10 @@
         ];
         mru = {
           cwd_only = true;
-          limit = 10;
+          limit = 5;
         };
-        project = {
-          enable = false;
-        };
-        shortcut = [
-          {
-            action = {
-              __raw = "function(path) vim.cmd('Telescope find_files') end";
-            };
-            desc = "Files";
-            group = "Label";
-            icon = " ";
-            icon_hl = "@variable";
-            key = "f";
-          }
-        ];
+        project.enable = false;
+        packages.enable = false;
         week_header = {
           enable = true;
         };
