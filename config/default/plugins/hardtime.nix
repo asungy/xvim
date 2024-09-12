@@ -1,0 +1,3 @@
+{
+  hardtime.enable = true;
+}

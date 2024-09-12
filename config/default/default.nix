@@ -18,6 +18,7 @@
   // import ./plugins/dashboard.nix         # Startup dashboard.
   // import ./plugins/flash.nix             # Quick character navigation
   // import ./plugins/gitsigns.nix          # Git integration for buffers
+  // import ./plugins/hardtime.nix          # Be better
   // import ./plugins/harpoon.nix           # Quick file list
   // import ./plugins/indent-blankline.nix  # Indentation guides
   // import ./plugins/lsp.nix               # Language server
@@ -34,6 +35,7 @@
   // import ./plugins/telescope.nix         # Fuzzy find all the things
   // import ./plugins/todo-comments.nix     # To-Do search
   // import ./plugins/toggleterm.nix        # Floating terminal
+  // import ./plugins/transparent.nix       # Transparent background
   // import ./plugins/treesitter.nix        # Parsing system
   // import ./plugins/trouble.nix           # Pretty diagnostics
   // import ./plugins/which-key.nix         # Key suggestions

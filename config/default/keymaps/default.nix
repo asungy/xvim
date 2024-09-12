@@ -180,4 +180,10 @@ import ./telescope.nix options ++
     mode = "n";
     options = options "Zen mode";
   }
+  {
+    action = "<CMD>TransparentToggle<CR>";
+    key = "<leader>tt";
+    mode = "n";
+    options = options "Toggle transparency";
+  }
 ]
