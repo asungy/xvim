@@ -1,28 +1,28 @@
 {
   lualine = {
     enable = true;
-    extensions = ["toggleterm" "fzf"];
-    globalstatus = true;
-    sections = {
-      lualine_c = [
-        {
-          name = "filename";
-          extraConfig = {
+    settings = {
+      extensions = ["toggleterm" "fzf"];
+      globalstatus = true;
+      sections = {
+        lualine_c = [
+          {
+            __unkeyed-1 = "filename";
             path = 3; # Absolute path with tilde as home directory.
-          };
-        }
-      ];
-      lualine_x = [
-        "%{''} %n"
-        { name = "filetype"; }
-      ];
-      lualine_y = [
-        { name = "tabs"; }
-        { name = "progress"; }
-      ];
-      lualine_z = [
-        { name = "location"; }
-      ];
+          }
+        ];
+        lualine_x = [
+          "%{''} %n"
+          { __unkeyed-1 = "filetype"; }
+        ];
+        lualine_y = [
+          { __unkeyed-1 = "tabs"; }
+          { __unkeyed-1 = "progress"; }
+        ];
+        lualine_z = [
+          { __unkeyed-1 = "location"; }
+        ];
+      };
     };
   };
 }
