@@ -18,7 +18,6 @@
   // import ./plugins/dashboard.nix         # Startup dashboard.
   // import ./plugins/flash.nix             # Quick character navigation
   // import ./plugins/gitsigns.nix          # Git integration for buffers
-  // import ./plugins/hardtime.nix          # Be better
   // import ./plugins/harpoon.nix           # Quick file list
   // import ./plugins/indent-blankline.nix  # Indentation guides
   // import ./plugins/lsp.nix               # Language server
