@@ -1,24 +1,17 @@
 { pkgs, default, }:
 {
-  config = default // {
-    plugins = default.plugins //
-    {
-      lsp = default.plugins.lsp // {
-        servers.pylsp.enable = true;
-      };
+  config = pkgs.lib.recursiveUpdate default {
+    plugins = {
+      lsp.servers.pylsp.enable = true;
     };
 
-    extraPlugins = with pkgs.vimPlugins;
-      default.extraPlugins
-      ++ [
-        iron-nvim
-      ];
+    extraPlugins = with pkgs.vimPlugins; default.extraPlugins ++ [
+      iron-nvim
+    ];
 
-    extraPackages = with pkgs.python312Packages;
-      default.extraPackages
-      ++ [
-        python
-      ];
+    extraPackages = with pkgs.python312Packages; default.extraPackages ++ [
+      python
+    ];
 
     extraConfigLua = default.extraConfigLua + builtins.readFile ./iron.lua;
 

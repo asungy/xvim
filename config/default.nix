@@ -14,6 +14,7 @@ in
 
   go     = makeModule ./go;
   lua    = makeModule ./lua;
+  nix    = makeModule ./nix;
   python = makeModule ./python;
   rust   = makeModule ./rust;
   ts     = makeModule ./ts;

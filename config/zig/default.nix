@@ -1,20 +1,13 @@
 { pkgs, default, }:
 {
-  config = default // {
-    plugins = default.plugins //
-    {
-      lsp = default.plugins.lsp //
-      {
-        servers.zls.enable = true;
-      };
+  config = pkgs.lib.recursiveUpdate default {
+    plugins = {
+      lsp.servers.zls.enable = true;
     };
-
-    extraPackages = default.extraPackages
-      ++ [
-        pkgs.zigpkgs."0.12.0"
-        pkgs.gdb
-      ];
-
+    extraPackages = with pkgs; default.extraPackages ++ [
+      zigpkgs."0.12.0"
+      gdb
+    ];
     extraConfigLua = default.extraConfigLua + ''
     do
       -- Prevent auto-format on save.

@@ -47,6 +47,7 @@
           rust    = config.rust;
           ts      = config.ts;
           zig     = config.zig;
+          nix     = config.nix;
         };
       }
     );
