@@ -43,11 +43,12 @@
           default = config.default;
           go      = config.go;
           lua     = config.lua;
+          nix     = config.nix;
           python  = config.python;
           rust    = config.rust;
+          tauri   = config.tauri;
           ts      = config.ts;
           zig     = config.zig;
-          nix     = config.nix;
         };
       }
     );
