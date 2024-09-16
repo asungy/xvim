@@ -4,6 +4,7 @@
     plugins = {
       # Drop-in replacement for tsserver.
       typescript-tools.enable = true;
+      lsp.servers.astro.enable = true;
     };
 
     extraPackages = default.extraPackages ++ [ pkgs.nodejs_22 ];
