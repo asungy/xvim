@@ -8,7 +8,6 @@ in
 import ./gitsigns.nix options ++
 import ./hlslens.nix options ++
 import ./lspsaga.nix options ++
-import ./neo-tree.nix options ++
 import ./telescope.nix options ++
 [
   {
@@ -185,5 +184,17 @@ import ./telescope.nix options ++
     key = "<leader>tt";
     mode = "n";
     options = options "Toggle transparency";
+  }
+  {
+    action = "<CMD>Oil .<CR>";
+    key = "<C-n>";
+    mode = "n";
+    options = options "Open file explorer at current directory";
+  }
+  {
+    action = "<CMD>Oil<CR>";
+    key = "<A-n>";
+    mode = "n";
+    options = options "Open file explorer for current buffer";
   }
 ]

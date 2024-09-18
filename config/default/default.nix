@@ -25,10 +25,10 @@
   // import ./plugins/lualine.nix           # Status line
   // import ./plugins/markdown-preview.nix  # Markdown previewer
   // import ./plugins/navbuddy.nix          # Navigation popup
-  // import ./plugins/neo-tree.nix          # File explorer.
   // import ./plugins/neogit.nix            # Git interface
   // import ./plugins/noice.nix             # UI popup menu
   // import ./plugins/notify.nix            # Notifications
+  // import ./plugins/oil.nix               # File explorer
   // import ./plugins/packer.nix            # For unsupported packages
   // import ./plugins/specs.nix             # Cursor dance
   // import ./plugins/telescope.nix         # Fuzzy find all the things
