@@ -16,7 +16,7 @@
         packages.enable = false;
         shortcut = [
           {
-            action = "Neotree position=current";
+            action = "Oil .";
             desc = "File tree";
             group = "DashboardShortCutIcon";
             icon = " ";
