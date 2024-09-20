@@ -56,8 +56,20 @@
 
   extraConfigLua = import ./lua ;
 
-  extraPackages = with pkgs; [
-    git
-    ripgrep
-  ];
+  extraPackages =
+  # Packages required for neovim plugins.
+  (with pkgs; [
+    git     # Version control.
+    ripgrep # Search tool.
+  ]) ++
+  # Tools I like.
+  (with pkgs; [
+    bat                 # A better `cat`
+    cloc                # Line counter
+    devenv              # Nix dev environments
+    htop                # Resource viewer
+    jq                  # Steroids for JSON
+    tldr                # All the manpages
+    tree                # File tree viewer
+  ]);
 }
