@@ -12,6 +12,7 @@
     extraPackages = with pkgs; default.extraPackages ++ [
       (rust-bin.stable.latest.default.override {
         extensions = [ "rust-src" "rust-analyzer" ];
+        targets = ["wasm32-unknown-unknown"];
       })
       gcc
       gdb
