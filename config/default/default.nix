@@ -67,6 +67,7 @@
     bat                 # A better `cat`
     cloc                # Line counter
     devenv              # Nix dev environments
+    hexyl               # Hexdump viewer
     htop                # Resource viewer
     jq                  # Steroids for JSON
     tldr                # All the manpages
