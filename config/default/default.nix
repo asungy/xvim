@@ -37,8 +37,9 @@
   // import ./plugins/transparent.nix       # Transparent background
   // import ./plugins/treesitter.nix        # Parsing system
   // import ./plugins/trouble.nix           # Pretty diagnostics
+  // import ./plugins/web-devicons.nix      # Cool icons
   // import ./plugins/which-key.nix         # Key suggestions
-  // import ./plugins/zen-mode.nix          # Center buffer.
+  // import ./plugins/zen-mode.nix          # Center buffer
   ;
 
   extraPlugins = with pkgs.vimPlugins; [
