@@ -46,7 +46,6 @@
           nix     = config.nix;
           python  = config.python;
           rust    = config.rust;
-          tauri   = config.tauri;
           ts      = config.ts;
           zig     = config.zig;
         };

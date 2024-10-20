@@ -2,7 +2,7 @@
 {
   config = pkgs.lib.recursiveUpdate default {
     plugins = {
-      lsp.servers.rust-analyzer = {
+      lsp.servers.rust_analyzer = {
         enable = true;
         installCargo = false;
         installRustc = false;

@@ -2,7 +2,7 @@
 {
   config = pkgs.lib.recursiveUpdate default {
     plugins = {
-      lsp.servers.lua-ls.enable = true;
+      lsp.servers.lua_ls.enable = true;
     };
     extraPackages = with pkgs; default.extraPackages ++[
       lua

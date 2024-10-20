@@ -17,7 +17,6 @@ in
   nix    = makeModule ./nix;
   python = makeModule ./python;
   rust   = makeModule ./rust;
-  tauri  = makeModule ./tauri;
   ts     = makeModule ./ts;
   zig    = makeModule ./zig;
 }
