@@ -12,6 +12,7 @@ in
     module = { config = default; };
   };
 
+  cpp    = makeModule ./cpp;
   go     = makeModule ./go;
   lua    = makeModule ./lua;
   nix    = makeModule ./nix;

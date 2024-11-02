@@ -40,6 +40,7 @@
       in
       {
         packages = {
+          cpp     = config.cpp;
           default = config.default;
           go      = config.go;
           lua     = config.lua;
