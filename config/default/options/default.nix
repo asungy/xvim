@@ -38,7 +38,7 @@ in
   pumblend = 10;              # pseudo-transparency for popup-menu
   pumheight = 10;             # max number of items to show in popup-menu
   relativenumber = false;     # show line number relative to cursor line
-  scrolloff = 10;             # min number of lines to keep above and below cursor
+  scrolloff = 5;              # min number of lines to keep above and below cursor
   shiftwidth = 4;             # number of spaces to use for each step of (auto)indent
   showbreak = "+++ ";         # string to put at start of lines that have been wrapped
   showtabline = 0;            # when to show tabline (0: never)
