@@ -7,6 +7,11 @@
       lsp.servers.astro.enable = true;
     };
 
-    extraPackages = default.extraPackages ++ [ pkgs.nodePackages_latest.nodejs ];
+    extraPackages =
+      default.extraPackages
+      ++ (with pkgs; [
+        bun
+        nodePackages_latest.nodejs
+      ]);
   };
 }
