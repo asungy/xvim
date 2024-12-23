@@ -16,7 +16,6 @@
       })
       gcc
       gdb
-      diesel-cli
     ];
   };
 }
