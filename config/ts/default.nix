@@ -12,6 +12,7 @@
       ++ (with pkgs; [
         bun
         nodePackages_latest.nodejs
+        typescript-language-server
       ]);
   };
 }
